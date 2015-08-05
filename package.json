@@ -1,0 +1,45 @@
+{
+  "name": "fuzzy-dates",
+  "version": "0.0.1",
+  "description": "Fuzzy dates module for Histograph",
+  "main": "./index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jshint *.js && jscs *.js && node_modules/.bin/mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/histograph/fuzzy-dates.git"
+  },
+  "author": "Bert Spaan <bert@waag.org>",
+  "contributors": [
+    {
+      "name": "Bert Spaan",
+      "email": "bert@waag.org"
+    },
+    {
+      "name": "Jelle Herold",
+      "email": "jelle@waag.org"
+    }
+  ],
+  "license": "GPL-3.0",
+  "jshintConfig": {
+    "node": true,
+    "globalstrict": false,
+    "undef": true,
+    "unused": true,
+    "noarg": true
+  },
+  "jscsConfig": {
+    "preset": "airbnb",
+    "requireCamelCaseOrUpperCaseIdentifiers": null,
+    "disallowMultipleVarDecl": true,
+    "requireMultipleVarDecl": null
+  }
+}

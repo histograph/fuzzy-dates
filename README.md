@@ -22,8 +22,8 @@ One of the following:
       significance: '1m'
     }
 
-Units:
-
+- Date: either year or `xsd:data`
+- Significance units:
   - `d`: day
   - `m`: month
   - `y`: year
