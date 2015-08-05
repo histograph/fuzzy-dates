@@ -6,37 +6,38 @@ Fuzzy dates module for Histograph.
 
 One of the following:
 
-- `xsd:date`
-- Jaartal
-- `xsd:date` with significance
-- Year with significance
+- ISO 8601 date
+- Year
+- ISO 8601 date with error
+- Year with error
 - Array/range of two years
-- Array/range of two `xsd:date`s
+- Array/range of two ISO 8601 dates
 
-(The first two cases imply that their significance is `null`.)
+(The first two cases imply that their error is `null`.)
 
-### Significance
+### Error
 
     {
       date: '1970',
-      significance: '1m'
+      error: '1m'
     }
 
-- Date: either year or `xsd:data`
-- Significance units:
+- Date: either year or ISO 8601 date
+- error units:
   - `d`: day
   - `m`: month
   - `y`: year
 
 ## Output
 
-- Array/range of two `xsd:date`s
+- Array/range of two ISO 8601 date
 
 ## TODO
 
 - Create unit tests
 - Create JSON schema
   - Date/year
-  - Significance
+  - error
   - Range
 - Create conversion code
+- Decide which part of ISO 8601 to use: only yyyy/yyyy-mm-dd, also weeks, or even more?

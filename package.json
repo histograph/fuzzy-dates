@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Fuzzy dates module for Histograph",
   "main": "./index.js",
-  "dependencies": {},
+  "dependencies": {
+    "is-my-json-valid": "^2.12.1",
+    "moment": "^2.10.6"
+  },
   "devDependencies": {
     "jscs": "^1.13.1",
     "jshint": "^2.8.0",
