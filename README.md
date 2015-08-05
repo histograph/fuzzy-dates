@@ -7,7 +7,7 @@ Fuzzy dates module for Histograph.
 One of the following:
 
 - ISO 8601 date
-- Jaartal
+- Year
 - ISO 8601 date with error
 - Year with error
 - Array/range of two years
