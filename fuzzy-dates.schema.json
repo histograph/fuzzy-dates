@@ -37,6 +37,7 @@
           "pattern": "\\d+y"
         }
       },
+      "additionalProperties": false,
       "required": [
         "year",
         "error"
@@ -53,6 +54,7 @@
           "pattern": "\\d+(d|m|y)"
         }
       },
+      "additionalProperties": false,
       "required": [
         "date",
         "error"
