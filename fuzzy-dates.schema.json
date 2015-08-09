@@ -81,6 +81,10 @@
           "$ref": "#/definitions/date"
         }
       ]
+    },
+    {
+      "type": "string",
+      "pattern": "-?\\d+±\\d"
     }
   ]
 }
