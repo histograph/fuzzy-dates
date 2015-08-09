@@ -12,6 +12,7 @@ One of the following:
 - Year (string or number)
 - ISO 8601 date with error specification
 - Year with error specification
+- A year ± error in years (`1995±5`)
 - Array of two years
 - Array of two ISO 8601 dates
 
