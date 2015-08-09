@@ -6,7 +6,7 @@ describe('fuzzy-dates', function() {
    describe('convert', function() {
      testDates.forEach(function(date) {
        it('Should convert ' + JSON.stringify(date.input), function() {
-         assert.equal(fuzzyDates.convert(date.input), date.output);
+         assert.deepEqual(fuzzyDates.convert(date.input), date.output);
        });
      });
    });
