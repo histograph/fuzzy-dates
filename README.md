@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/histograph/fuzzy-dates.svg)](https://travis-ci.org/histograph/fuzzy-dates)
+
 # Fuzzy Dates
 
 Fuzzy dates module for Histograph.
