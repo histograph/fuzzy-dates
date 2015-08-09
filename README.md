@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/histograph/fuzzy-dates.svg)](https://travis-ci.org/histograph/fuzzy-dates)
-
-# Fuzzy Dates
+<h1>Fuzzy Dates<a href="https://travis-ci.org/histograph/fuzzy-dates"><img src="https://travis-ci.org/histograph/fuzzy-dates.svg" style="float: right"></a></h1>
 
 Fuzzy dates module for [Histograph](https://github.com/histograph/histograph).
 
