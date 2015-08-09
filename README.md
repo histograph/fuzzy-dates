@@ -22,6 +22,7 @@ One of the following:
   date: '1970',
   error: '1M'
 }
+```
 
 - Date: either a year or an ISO 8601 date
 - error units:
