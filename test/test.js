@@ -5,8 +5,9 @@ var testDates = require('./testDates.js');
 describe('fuzzy-dates', function() {
    describe('convert', function() {
      testDates.forEach(function(date) {
-       it('Should convert ' + JSON.stringify(date.input), function() {
-         assert.deepEqual(fuzzyDates.convert(date.input), date.output);
+       var output = fuzzyDates.convert(date.input);
+       it('Should convert ' + JSON.stringify(date.input) + ' to ' + JSON.stringify(output), function() {
+         assert.deepEqual(output, date.output);
        });
      });
    });

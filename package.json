@@ -1,8 +1,13 @@
 {
   "name": "fuzzy-dates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fuzzy dates module for Histograph",
   "main": "./index.js",
+  "keywords": [
+    "time",
+    "date",
+    "fuzzy"
+  ],
   "dependencies": {
     "is-my-json-valid": "^2.12.1",
     "moment": "^2.10.6"

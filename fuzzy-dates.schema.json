@@ -29,7 +29,7 @@
     {
       "type": "object",
       "properties": {
-        "year": {
+        "date": {
           "$ref": "#/definitions/year"
         },
         "error": {
@@ -39,7 +39,7 @@
       },
       "additionalProperties": false,
       "required": [
-        "year",
+        "date",
         "error"
       ]
     },
@@ -51,7 +51,7 @@
         },
         "error": {
           "type": "string",
-          "pattern": "\\d+(d|m|y)"
+          "pattern": "\\d+(d|M|y)"
         }
       },
       "additionalProperties": false,

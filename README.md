@@ -2,44 +2,72 @@
 
 # Fuzzy Dates
 
-Fuzzy dates module for Histograph.
+Fuzzy dates module for [Histograph](https://github.com/histograph/histograph).
 
 ## Input
 
 One of the following:
 
-- ISO 8601 date
-- Year
-- ISO 8601 date with error
-- Year with error
-- Array/range of two years
-- Array/range of two ISO 8601 dates
+- ISO 8601 date (`YYYY-MM-DD`, for example `2007-06-12`)
+- Year (string or number)
+- ISO 8601 date with error specification
+- Year with error specification
+- Array of two years
+- Array of two ISO 8601 dates
 
-(The first two cases imply that their error is `null`.)
+### Error specification
 
-### Error
+```js
+{
+  date: '1970',
+  error: '1M'
+}
 
-    {
-      date: '1970',
-      error: '1m'
-    }
-
-- Date: either year or ISO 8601 date
+- Date: either a year or an ISO 8601 date
 - error units:
   - `d`: day
-  - `m`: month
+  - `M`: month
   - `y`: year
+
+Fuzzy Dates uses [Moment.js time shorthand keys](http://momentjs.com/docs/#/manipulating/add/) (currently only days, months and years).
 
 ## Output
 
-- Array/range of two ISO 8601 date
+- Array of two ISO 8601 dates
 
-## TODO
+### Example
 
-- Create unit tests
-- Create JSON schema
-  - Date/year
-  - error
-  - Range
-- Create conversion code
-- Decide which part of ISO 8601 to use: only yyyy/yyyy-mm-dd, also weeks, or even more?
+Input:
+
+```js
+{
+  year: 1915,
+  error: '3y'
+}
+```
+
+Output:
+
+```
+[
+  '1912-01-01',
+  '1918-12-31'
+]
+```
+
+See [`test/testDates.js`](test/testDates.js) for more examples, or run `npm test`.
+
+## Installation
+
+    npm install --save histograph/fuzzy-dates
+
+## Usage
+
+```js
+var fd = require('fuzzy-dates);
+
+var a = fd.convert('1995');
+
+console.log(a);
+// ["1995-01-01", "1995-12-31"]
+```

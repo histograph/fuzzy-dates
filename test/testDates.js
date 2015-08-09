@@ -27,18 +27,6 @@ module.exports = [
 
 
   {
-    input: {
-      date: '2010',
-      significance: '1y'
-    },
-    output: [
-      '2009-01-01',
-      '2011-12-31'
-    ]
-  },
-
-
-  {
     input: [
       1910,
       1920
@@ -52,7 +40,7 @@ module.exports = [
 
   {
     input: {
-      year: '2010',
+      date: '2010',
       error: '1y'
     },
     output: [
@@ -64,7 +52,7 @@ module.exports = [
 
   {
     input: {
-      year: 1915,
+      date: 1915,
       error: '3y'
     },
     output: [
@@ -77,7 +65,7 @@ module.exports = [
   {
     input: {
       date: '1950-12-12',
-      error: '3m'
+      error: '3M'
     },
     output: [
       '1950-09-12',
