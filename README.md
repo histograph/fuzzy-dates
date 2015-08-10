@@ -34,7 +34,7 @@ One of the following:
 }
 ```
 
-- String with year and error in years the form `:year±:error`:
+- String with year and error in years, of the form `:year±:error`:
 
 `"1995±5"`
 
