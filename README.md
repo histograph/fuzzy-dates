@@ -66,10 +66,9 @@ See [`test/testDates.js`](test/testDates.js) for more examples, or run `npm test
 ## Usage
 
 ```js
-var fd = require('fuzzy-dates);
+var fd = require('fuzzy-dates');
 
 var a = fd.convert('1995');
 
-console.log(a);
-// ["1995-01-01", "1995-12-31"]
+console.log(a); // => ["1995-01-01", "1995-12-31"]
 ```
