@@ -8,13 +8,53 @@ Fuzzy dates module for [Histograph](https://github.com/histograph/histograph).
 
 One of the following:
 
-- ISO 8601 date (`YYYY-MM-DD`, for example `2007-06-12`)
-- Year (string or number)
-- ISO 8601 date with error specification
-- Year with error specification
-- A year ± error in years (`1995±5`)
+- ISO 8601 date string (`YYYY-MM-DD`):
+
+`"2007-06-12"`
+
+- Single year (string or number):
+
+`1920`, `"1995"`
+
+- Object with a ISO 8601 date string and an error specification:
+
+```js
+{
+  date: '1962-10-10',
+  error: '1M'
+}
+```
+
+- Object with a year string/number and an error specification:
+
+```js
+{
+  date: '1970',
+  error: '5y'
+}
+```
+
+- String with year and error in years, of the form `:year±:error`:
+
+`"1995±5"`
+
 - Array of two years
-- Array of two ISO 8601 dates
+
+```js
+[
+  1930,
+  1940
+]
+```
+
+- Array of two ISO 8601 date strings
+
+```js
+[
+  "1912-03-04",
+  "1912-03-26"
+]
+```
 
 ### Error specification
 
