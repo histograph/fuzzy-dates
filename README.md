@@ -112,3 +112,4 @@ var a = fd.convert('1995');
 
 console.log(a); // => ["1995-01-01", "1995-12-31"]
 ```
+Copyright (C) 2015 [Waag Society](http://waag.org).
