@@ -1,4 +1,4 @@
-The MIT License (MIT)
+## The MIT License (MIT)
 
 Copyright (C) 2015 [Waag Society](http://waag.org).
 
