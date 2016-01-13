@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-dates",
-  "version": "0.0.2",
+  "version": "0.5.0",
   "description": "Fuzzy dates module for Histograph",
   "main": "./index.js",
   "keywords": [
